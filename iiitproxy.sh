@@ -1,3 +1,5 @@
+#!/bin/bash/
+
 len=`ping -c 1 moodle.iiit.ac.in`
 st=`echo "$len" | wc -l`
 
