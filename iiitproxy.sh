@@ -26,6 +26,13 @@ if (( $st > 1 )); then
 	# setting exception list
 	export no_proxy=localhost,127.0.0.1,iiit.ac.in,.iiit.ac.in,iiit.net,.iiit.net,172.16.0.0/12,192.168.0.0/16,10.0.0.0/8
 	export NO_PROXY=localhost,127.0.0.1,iiit.ac.in,.iiit.ac.in,iiit.net,.iiit.net,172.16.0.0/12,192.168.0.0/16,10.0.0.0/8
+
+	# Setting up the apt.conf file for apt access.
+	echo 'Acquire::http::proxy "http://proxy.iiit.ac.in:8080/";' > /etc/apt/apt.conf
+	echo 'Acquire::http::proxy "https://proxy.iiit.ac.in:8080/";' >> /etc/apt/apt.conf
+	echo 'Acquire::ftp::proxy "ftp://proxy.iiit.ac.in:8080/";' >> /etc/apt/apt.conf
+	echo 'Acquire::socks::proxy "socks://proxy.iiit.ac.in:8080/";' >> /etc/apt/apt.conf
+
 else
 	unset ALL_PROXY
 	unset all_proxy
@@ -44,5 +51,8 @@ else
 	
 	unset no_proxy
 	unset NO_PROXY
+
+	# Unsetting the apt conf file
+	echo "" > /etc/apt/apt.conf
 
 fi
