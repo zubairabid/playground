@@ -1,9 +1,15 @@
 <!doctype html>
 <html>
-  {% include blog_head.html %}
+  {% include head.html %}
   <body>
-    <h1> this is using a custom layout </h1>
-    {% include cheader.html %}
-    {{content}}
+    <main class="container">
+      {% include header.html %}
+
+      {{content}}
+
+      {% include js.html %}
+    </main>
+
+    {% include footer.html %}
   </body>
 </html>
