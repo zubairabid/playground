@@ -1,0 +1,12 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #234233;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}

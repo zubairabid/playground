@@ -1,8 +1,9 @@
 ---
-layout: post
-title:  "My first manual post"
+layout: wrapper
+title:  "nahi sirji"
 date:   2018-05-15 23:59:39 +0530
 categories: jekyll update
+permalink: /:categories/:year/:month/:day/:title.html
 ---
 This is the second post made in my `_posts` directory. I edited and re-built it, and observing the changes as they happen. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
