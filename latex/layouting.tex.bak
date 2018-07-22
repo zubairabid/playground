@@ -1,0 +1,17 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+%\setmainfont{???}
+\usepackage{graphicx}
+\usepackage[left=1cm,right=1cm,top=0cm,bottom=1cm]{geometry}
+
+\title{Zubair Abid}
+\author{zubair.abid@research.iiit.ac.in}
+\date{}
+
+\begin{document}
+\maketitle
+
+\end{document}
